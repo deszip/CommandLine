@@ -222,6 +222,7 @@ public class StringOption: Option {
 
 /**  An option that accepts one or more string values. */
 public class MultiStringOption: Option {
+  var defaultValue: [String]? = nil
   private var _value: [String]?
 
   public var value: [String]? {
@@ -242,9 +243,13 @@ public class MultiStringOption: Option {
 
   override func setValue(_ values: [String]) -> Bool {
     if values.count == 0 {
-      return false
+      if self.defaultValue != nil {
+        _value = defaultValue
+      } else {
+        return false
+      }
     }
-
+    
     _value = values
     return true
   }
