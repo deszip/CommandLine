@@ -222,7 +222,7 @@ public class StringOption: Option {
 
 /**  An option that accepts one or more string values. */
 public class MultiStringOption: Option {
-  var defaultValue: [String]? = nil
+  public var defaultValue: [String]? = nil
   private var _value: [String]?
 
   public var value: [String]? {
