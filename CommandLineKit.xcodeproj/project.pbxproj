@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EA55CE91E783D55005D9568 /* CommandLineKit.podspec in Sources */ = {isa = PBXBuildFile; fileRef = 0EA55CE81E783D55005D9568 /* CommandLineKit.podspec */; };
+		0EA55CE91E783D55005D9568 /* CommandLine.podspec in Sources */ = {isa = PBXBuildFile; fileRef = 0EA55CE81E783D55005D9568 /* CommandLine.podspec */; };
 		5D06884F19674D7D00BBFAAC /* CommandLineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D06884319674D7D00BBFAAC /* CommandLineKit.framework */; };
 		5D06885619674D7D00BBFAAC /* CommandLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D06885519674D7D00BBFAAC /* CommandLineTests.swift */; };
 		5D06886019674DA600BBFAAC /* CommandLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D06885F19674DA600BBFAAC /* CommandLine.swift */; };
@@ -76,7 +76,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EA55CE81E783D55005D9568 /* CommandLineKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CommandLineKit.podspec; sourceTree = "<group>"; };
+		0EA55CE81E783D55005D9568 /* CommandLine.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CommandLine.podspec; sourceTree = "<group>"; };
 		1968E1361C85926C00418122 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		5D06884319674D7D00BBFAAC /* CommandLineKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommandLineKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D06884719674D7D00BBFAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 		5D06883919674D7D00BBFAAC = {
 			isa = PBXGroup;
 			children = (
-				0EA55CE81E783D55005D9568 /* CommandLineKit.podspec */,
+				0EA55CE81E783D55005D9568 /* CommandLine.podspec */,
 				5D449B63198B412E00F9A8A6 /* ReadMe.md */,
 				5D06884519674D7D00BBFAAC /* CommandLineKit */,
 				1968E1351C85922A00418122 /* Tests */,
@@ -295,7 +295,7 @@
 			files = (
 				5D449A18198B015E00F9A8A6 /* StringExtensions.swift in Sources */,
 				5D068867196A212A00BBFAAC /* Option.swift in Sources */,
-				0EA55CE91E783D55005D9568 /* CommandLineKit.podspec in Sources */,
+				0EA55CE91E783D55005D9568 /* CommandLine.podspec in Sources */,
 				5D06886019674DA600BBFAAC /* CommandLine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
