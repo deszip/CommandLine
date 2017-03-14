@@ -381,23 +381,23 @@ internal class CommandLineTests: XCTestCase {
     } catch {
       XCTFail("Failed to parse multi string options: \(error)")
     }
-
-    /* No value */
-    let e = MultiStringOption(shortFlag: "e", longFlag: "e1", required: false, helpMessage: "")
-    cli.setOptions(e)
-
-    do {
-      try cli.parse()
-      XCTFail("Parsed multi string option with no value")
-    } catch let CommandLineKit.CommandLine.ParseError.invalidValueForOption(opt, vals) {
-      XCTAssert(opt === e, "Incorrect option in ParseError: \(opt.longFlag)")
-      XCTAssertEqual(vals, [], "Incorrect values in ParseError: \(vals)")
-      XCTAssertNil(e.value, "Got non-nil value from no value multistring")
-    } catch {
-      XCTFail("Unexpected parse error: \(error)")
-    }
   }
 
+  func testMultiStringOptionEmptyValue() {
+    let cli = CommandLine(arguments: [ "CommandLineTests", "-a" ])
+    
+    let a = MultiStringOption(shortFlag: "a", longFlag: "a1", required: true, helpMessage: "")
+    cli.setOptions(a)
+    
+    do {
+      try cli.parse()
+      XCTAssertEqual(a.wasSet, true)
+      XCTAssertEqual(a.value?.count, 0)
+    } catch {
+      XCTFail("Failed to parse multi string option with default value: \(error)")
+    }
+  }
+  
   func testConcatOptionWithValue() {
     let cli = CommandLine(arguments: [ "CommandLineTests", "-xvf", "file1", "file2" ])
 
