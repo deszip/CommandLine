@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-    spec.name = 'CommandLineKit'
+    spec.name = 'CommandLine'
     spec.version = '3.0.0'
     spec.summary = 'A pure Swift library for creating command-line interfaces'
     spec.homepage = 'https://github.com/jatoben/CommandLine'
