@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
     spec.license = { :type => 'Apache License', :file => 'LICENSE' }
     spec.author = { 'Ben Gollmer' => 'jatoben@github.com' }
     spec.source = { :git => 'https://github.com/deszip/CommandLine.git', :tag => 'v3.0.0'}
-    spec.source_files = 'CommandLine/*.{swift}'
+    spec.source_files = 'CommandLineKit/*.{swift}'
     spec.osx.deployment_target = '10.10'
     spec.requires_arc = true
 end
